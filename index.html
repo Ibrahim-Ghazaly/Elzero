@@ -86,9 +86,7 @@
           <img src="images/landing-image.png" alt="alnding page">
         </div>
       </div>
-      <a href="#article" class="go-down">
-        <i class="fas fa-angle-double-down fa-2x"></i>
-      </a>
+     
     </section>
     <!-- end landing page  -->
     <!-- start articles section -->
@@ -258,7 +256,7 @@
           <div class="image"> <img src="images/features-03.jpg"></div>
           <div class="content">
             <h2>passion</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
             <a href="">more</a>
           </div>
         </div>
@@ -630,26 +628,30 @@
           <div class="skill">
             <h3>html <span>80%</span></h3>
             <div class="progres">
-              <span style="width: 80%;"></span>
+              <span style="width: 0" data-width="80%"></span>
+
             </div>
           </div>
          
           <div class="skill">
             <h3>css<span>85%</span></h3>
             <div class="progres">
-              <span style="width: 85%;"></span>
+              <span style="width: 0" data-width="90%"></span>
+
             </div>
           </div>
           <div class="skill">
             <h3>javascript<span>70%</span></h3>
             <div class="progres">
-              <span style="width:70%;"></span>
+              <span style="width: 0" data-width="50%"></span>
+
             </div>
           </div>
           <div class="skill">
             <h3>python<span>80%</span></h3>
             <div class="progres">
-              <span style="width: 80%;"></span>
+              <span style="width: 0" data-width="35%"></span>
+
             </div>
           </div>
         </div>
@@ -830,22 +832,22 @@
       <div class="container">
         <div class="box">
           <i class="far fa-user fa-2x fa-fw"></i>
-          <span>150</span>
+          <span class="number" data-goal="135">0</span>
           <span>clients</span>
         </div>
         <div class="box">
           <i class="fas fa-code fa-2x fa-fw"></i>
-          <span>400</span>
+          <span class="number" data-goal="100">0</span>
           <span>projects</span>
         </div>
         <div class="box">
           <i class="far fa-globe-asia fa-2x fa-fw"></i>
-          <span>12</span>
+          <span class="number" data-goal="50">0</span>
           <span>countries</span>
         </div>
         <div class="box">
           <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
-          <span>500K</span>
+          <span class="number" data-goal="500">0</span>
           <span>money</span>
         </div>
       </div>
@@ -876,7 +878,7 @@
     </section>
     <!-- end discount  -->
     <!-- start footer  -->
-    <section class="footer">
+    <section class="footer" id="footer">
       <div class="container">
         <div class="box">
           <h2>Elzero</h2>
@@ -939,8 +941,11 @@
       <footer>
         Made With &copy; By Elzero
       </footer>
+      <a href="" class="go-up show">
+        <i class="fas fa-angle-double-up fa-2x"></i>
+      </a>
     </section>
     <!-- end footer  -->
-      
+      <script src="main.js"></script>
 </body>
 </html>

@@ -20,6 +20,7 @@
   }
   body {
     font-family: "Cairo", sans-serif;
+    overflow-x: hidden;
   }
   a {
     text-decoration: none;
@@ -265,7 +266,6 @@ header .container nav  .main-nav >li:hover>a{
      opacity:0;
      border-bottom: 4px solid var(--main-color); 
      transition: top var(--main-transition), opacity var(--main-transition);
-
 } 
 
 @media (max-width: 767px) {
@@ -273,8 +273,6 @@ header .container nav  .main-nav >li:hover>a{
       flex-direction: column;
       padding: 5px;
       gap: 0;
-    
-    
     }
   }
 
@@ -427,17 +425,7 @@ header .mega-menu .image img {
 }
 
 
-.landing-page .go-down{
-  position: absolute;
-  cursor: pointer;
-  bottom: 40px;
-  left: 50%;
-  color:var(--main-color);
-  transform: translateX(-50%);
-  z-index: 10;
-  animation: bouncing 1.5s infinite linear;
 
-}
 
 
 @keyframes  bouncing{
@@ -1207,17 +1195,20 @@ header .mega-menu .image img {
          
          
 .our-skills .container .skills .skill .progres{
-  height:30px;
-  background-color: #eee;
   position: relative;
+  width: 500px;
+  height: 30px;
+  background-color: white;
+  margin: 10px;
 }
 
 .our-skills .container .skills .skill .progres span {
   position: absolute;
   left: 0;
   top: 0;
-  height: inherit;
-  background-color: var(--main-color);
+  height: 100%;
+  background-color: indianred;
+  transition: width 0.3s linear;
 }
 /* end our skills  */
 
@@ -2030,5 +2021,21 @@ header .mega-menu .image img {
   margin: 50px 0 0;
   border-top: 1px solid #444;
  
+}
+
+.footer .go-up{
+  position: fixed;
+  cursor: pointer;
+  bottom: 40px;
+  right:-30px;
+  color:var(--main-color);
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: bouncing 1.5s infinite linear;
+
+}
+
+.footer .go-up.show{
+  right:30px;
 }
 /* end footer  */
